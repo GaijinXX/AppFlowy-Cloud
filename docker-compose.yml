@@ -178,9 +178,6 @@ services:
   appflowy_worker:
     restart: on-failure
     image: appflowyinc/appflowy_worker:${APPFLOWY_WORKER_VERSION:-latest}
-    build:
-      context: .
-      dockerfile: ./services/appflowy-worker/Dockerfile
     environment:
       - RUST_LOG=${RUST_LOG:-info}
       - APPFLOWY_ENVIRONMENT=production
