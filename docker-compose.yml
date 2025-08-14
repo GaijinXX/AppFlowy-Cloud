@@ -72,7 +72,6 @@ services:
       - API_EXTERNAL_URL=${API_EXTERNAL_URL}
       - DATABASE_URL=${GOTRUE_DATABASE_URL}
       - PORT=9999
-      - FQDN=http://localhost/gotrue
       - GOTRUE_SMTP_HOST=${GOTRUE_SMTP_HOST} # e.g. smtp.gmail.com
       - GOTRUE_SMTP_PORT=${GOTRUE_SMTP_PORT} # e.g. 465
       - GOTRUE_SMTP_USER=${GOTRUE_SMTP_USER} # email sender, e.g. noreply@appflowy.io
